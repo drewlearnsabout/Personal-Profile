@@ -15,6 +15,7 @@
     display: grid;
     grid-template-columns: 1fr;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
     grid-template-areas:
         "a"
         "b"
@@ -22,12 +23,12 @@
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(164deg, rgba(2,0,36,1) 0%, rgba(98,92,113,1) 0%, rgba(38,38,83,1) 73%, rgba(116,117,162,1) 100%);
+    margin: 0 auto;
+    background: rgb(31,35,70);
+    background: linear-gradient(98deg, rgba(31,35,70,1) 12%, rgba(207,207,207,1) 50%, rgba(19,26,60,1) 88%);
     top: 0;
     height: auto;
     width: 100%;
-    z-index: -1;
 }
 
 #navbar {
@@ -61,22 +62,35 @@ body {
     border-radius: 20px;
 }
 
-#welcome-station {
+#welcome-section {
     display: grid;
+    height: 35em;
     grid-template-columns: 1fr;
     justify-items: center;
     border-bottom: 1px solid orange;
+    background: url(https://github.com/drewlearnsabout/Personal-Profile/blob/master/dc-89.jpg?raw=true);
+    background-size: cover;
+    background-position: right top;
+}
+
+#banner-picture {
+    height: 700px;
+    width: 1000px;
 }
 
 #contact {
     display: grid;
-    max-width: 750px;
+    width: 100%;
     justify-self: center;
     grid-template-columns: 1fr;
+    background: rgb(0,0,0);
+    background: linear-gradient(53deg, rgba(0,0,0,1) 12%, rgba(255,245,245,1) 23%, rgba(0,0,0,1) 88%);
 }
 
 #contact_me {
+    width: 50%;
     display: grid;
+    justify-self: center;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1em;
@@ -93,30 +107,35 @@ body {
     grid-area: e;
 }
 
+.contact_me_class {
+    padding-left: 1em;
+    box-shadow: 2px 2px 3px #000000;
+}
+
 #name {
     grid-area: a;
-    border-radius: 5px;
+    border-radius: 1em;
 }
 
 #email {
     grid-area: b;
-    border-radius: 5px;
+    border-radius: 1em;
 }
 
 #addition {
     grid-area: f;
-    border-radius: 5px;
+    border-radius: 1em;
 }
 
 #comments {
     grid-area: d;
     font-family: lato;
-    border-radius: 5px;
+    border-radius: 1em;
 }
 
 #submit {
     grid-area: c;
-    border-radius: 20%;
+    border-radius: 1em;
     cursor: pointer;
 }
 
@@ -149,15 +168,22 @@ body {
 
 #projects {
     display: grid;
-    background: rgba(228, 228, 228, 20%);
     font-weight: bold;
     text-transform: uppercase;
     justify-items: center;
     border-bottom: 1px solid orange;
+    background: rgb(0,0,0);
+background: linear-gradient(207deg, rgba(0,0,0,1) 12%, rgba(255,245,245,1) 23%, rgba(0,0,0,1) 88%);
 }
 
 #projects p {
     justify-self: center;
+}
+
+.project-title {
+    display: grid;
+    justify-items: center;
+    color: rgb(236, 249, 253);
 }
 
 #project-tile {
@@ -171,27 +197,28 @@ body {
     width: 200px;
     border: 2px solid rgb(119, 118, 118);
     border-radius: 40px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 .tiles:hover {
     animation-name: beat;
-    animation-duration: 10s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 
-#profile-link {
+#portfolio {
     display: grid;
     justify-items: center;
 }
 
-#profile-link a {
+#profile-link {
     text-decoration: none;
     color: white;
 }
 
-#profile-link a:hover {
+#profile-link:hover {
     animation-name: beat;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     padding: 5px;
 }
@@ -208,9 +235,6 @@ body {
 }
 
 @keyframes fade {
-    0% {
-        background: rgb(78, 77, 77);
-    }
     50% {
         background: rgb(194, 126, 0);
     }
@@ -246,5 +270,9 @@ body {
     }
     .nav_tiles {
         padding: 10px 0 10px 20px;
+    }
+
+    #welcome-section {
+        background-position: left top;
     }
 }
