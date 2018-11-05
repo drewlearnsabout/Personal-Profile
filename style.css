@@ -24,8 +24,7 @@
 
 body {
     margin: 0 auto;
-    background: rgb(31,35,70);
-    background: linear-gradient(98deg, rgba(31,35,70,1) 12%, rgba(207,207,207,1) 50%, rgba(19,26,60,1) 88%);
+    background: white;
     top: 0;
     height: auto;
     width: 100%;
@@ -43,8 +42,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(207,207,207,1) 24%, rgba(59,59,59,1) 100%);
-    border-bottom: 1px solid orange;
+    background: rgba(0,0,0, 0.3);
 }
 
 .nav_tiles {
@@ -67,10 +65,15 @@ body {
     height: 35em;
     grid-template-columns: 1fr;
     justify-items: center;
-    border-bottom: 1px solid orange;
+    border-bottom: 10px solid orange;
     background: url(https://github.com/drewlearnsabout/Personal-Profile/blob/master/dc-89.jpg?raw=true);
     background-size: cover;
     background-position: right top;
+    margin-top: -3em;
+}
+
+#welcome-section h1 {
+    padding-top: 1.5em;
 }
 
 #banner-picture {
@@ -171,9 +174,8 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     justify-items: center;
-    border-bottom: 1px solid orange;
-    background: rgb(0,0,0);
-background: linear-gradient(207deg, rgba(0,0,0,1) 12%, rgba(255,245,245,1) 23%, rgba(0,0,0,1) 88%);
+    border-bottom: 10px solid orange;
+    background: white;
 }
 
 #projects p {
@@ -183,18 +185,19 @@ background: linear-gradient(207deg, rgba(0,0,0,1) 12%, rgba(255,245,245,1) 23%, 
 .project-title {
     display: grid;
     justify-items: center;
-    color: rgb(236, 249, 253);
+    color: black;
+    text-shadow: 5px 3px 5px rgba(126, 122, 131, 1);
 }
 
 #project-tile {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-gap: 1em 5em;
 }
 
 .tiles {
-    height: 180px;
-    width: 200px;
+    height: 29em;
+    width: 30em;
     border: 2px solid rgb(119, 118, 118);
     border-radius: 40px;
     box-shadow: 2px 2px 4px #000000;
@@ -267,6 +270,7 @@ background: linear-gradient(207deg, rgba(0,0,0,1) 12%, rgba(255,245,245,1) 23%, 
     #nav-move {
         grid-template-columns: repeat(1, 6em);
         justify-content: center;
+        display: none;
     }
     .nav_tiles {
         padding: 10px 0 10px 20px;
@@ -274,5 +278,6 @@ background: linear-gradient(207deg, rgba(0,0,0,1) 12%, rgba(255,245,245,1) 23%, 
 
     #welcome-section {
         background-position: left top;
+        margin-top: -7em;
     }
 }
