@@ -3,7 +3,8 @@
         <title>Andrew Carbungco</title>
         <link rel="stylesheet" href="style2.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">    </head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    </head>
     <body>
         <nav id="navbar">
             <img id="portfolioIcon" class="topIcons" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/iconfinder_business_finance_money-12_2784245.png?raw=true" alt="Portfolio Icon">
@@ -11,38 +12,58 @@
         </nav>
         <header>
             <h1>Andrew Carbungco
+                <p>Web Developer</p>
                 <section id="social_icons">
                     <section id="social_tiles_list">
-                        <a href="#"><img id="instagram" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/002-instagram.png?raw=true" alt="Instagram logo"></a>
-                        <a href="#"><img id="gitHub" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/005-cat.png?raw=true" alt="GitHub logo"></a>
-                        <a href="#"><img id="linkedIn" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/004-linkedin.png?raw=true" alt="LinkedIn Logo"></a>
+                        <a href="https://www.instagram.com/drewlearnsabout/" target="_blank"><img id="instagram" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/002-instagram.png?raw=true" alt="Instagram logo"></a>
+                        <a href="https://github.com/drewlearnsabout" target="_blank"><img id="gitHub" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/005-cat.png?raw=true" alt="GitHub logo"></a>
+                        <a href="https://www.linkedin.com/in/andrew-carbungco-1357ab22" target="_blank"><img id="linkedIn" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/004-linkedin.png?raw=true" alt="LinkedIn Logo"></a>
                     </section>
                 </section>
             </h1>
         </header>
         <section>
             <div id="myModal" class="modal">
-                <div class="modal-content">
+                <div class="modal-content"> 
                     <div class="slideshowContainer">
-                        <div class="mySlides">
-                            <a href="#"><img class="pictureSize" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Sourdough%20Bread%20Recipe%20page.png?raw=true"></a>
-                            <p class="text">Caption text</p>
-                        </div>
-                        <div class="mySlides">
-                            <a href="#"><img class="pictureSize" src="#"></a>
-                            <p class="text">Caption text</p>
-                        </div>
-                        <div class="mySlides">
-                            <a href="#"><img class="pictureSize" src="#"></a>
-                            <p class="text">Caption text</p>  
-                        </div>
-                        <div class="mySlides">
-                            <a href="#"><img class="pictureSize" src="#"></a>
-                            <p class="text">Caption text</p>  
-                        </div>
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <div class="mySlides">
+                            <a href="https://codepen.io/drewlearnsabout/pen/mQvXQb"><img class="pictureSize" src="hairstylist.png"></a>
+                            <p class="text">Example Freelance Hairstylist Landing Page</p>
+                        </div>
+                        <div class="mySlides">
+                            <a href="https://codepen.io/drewlearnsabout/pen/GYEErE?editors=1100"><img class="pictureSize" src="Sourdough Bread Recipe page.png"></a>
+                            <p class="text">Example Recipe Page</p>
+                        </div>
+                        <div class="mySlides">
+                            <a href="https://codepen.io/drewlearnsabout/pen/NENErL"><img class="pictureSize" src="Voting page.png"></a>
+                            <p class="text">Example Informative Web Page</p>
+                        </div>
+                        <div class="mySlides">
+                            <a href="https://codepen.io/drewlearnsabout/pen/MqNKKB"><img class="pictureSize" src="D20 Dice page.png"></a>
+                            <p class="text">Example Product Landing Page</p>  
+                        </div>
+                        <div class="mySlides">
+                            <a href="https://www.aimhighimpact.org"><img class="pictureSize" src="Impact home page.png"></a>
+                            <p class="text">Web Design Project for Non-Profit</p>  
+                        </div>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <form id="contact_me" name="contact" method="post" netlify>    
+                        <p>Contact me</p>
+                        <input class="contact_me_class" id="name" type="text" placeholder="Name" required>
+                        <input class="contact_me_class" id="email" type="email" placeholder="Email" required>
+                        <input class="contact_me_class" id="addition" type="number" placeholder="What's 1 + 2?" required>
+                        <textarea class="contact_me_class" id="comments" placeholder="Add comments or inquiries" rows="2" cols="19"></textarea>
+                        <button class="contact_me_class" id="submit" type="submit">Submit</button> 
+                    </form>
                     <span class="close">&times;</span>
                 </div>
             </div>
@@ -51,22 +72,42 @@
     
 
     <script>
+        //Variables for Portfolio Btn & Section
         var modal = document.getElementById("myModal");
         var portfolioBtn = document.getElementById("portfolioIcon");
-        var span = document.getElementsByClassName("close")[0];
-
+        var spanPortfolio = document.getElementsByClassName("close")[0];
+        //Variables for Contact Btn & Section
+        var modal2 = document.getElementById("myModal2");
+        var contactBtn = document.getElementById("contactIcon");
+        var spanContact = document.getElementsByClassName("close")[1];
+        
+        //JS for Portfolio
         portfolioBtn.onclick = function() {
             modal.style.display = "block";
         }
-        span.onclick = function() {
+        spanPortfolio.onclick = function() {
             modal.style.display = "none";
         }
+
+        //JS for Contact
+        contactBtn.onclick = function() {
+            modal2.style.display = "block";
+        }
+        spanContact.onclick = function() {
+            modal2.style.display = "none";
+        }
+
+        //JS for both Portfolio and Contact
         window.onclick = function() {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
         }
-
+        
+        //For the next and prev buttons
         var slideIndex = 1;
         showSlides(slideIndex);
 
