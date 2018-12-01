@@ -1,133 +1,92 @@
 <html>
     <head>
         <title>Andrew Carbungco</title>
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     </head>
     <body>
-        <nav id="navbar">
-            <img id="portfolioIcon" class="topIcons" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/iconfinder_business_finance_money-12_2784245.png?raw=true" alt="Portfolio Icon">
-            <img id="contactIcon" class="topIcons" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/iconfinder_contact_126567.png?raw=true" alt="Contact Icon">
-        </nav>
-        <header>
-            <h1>Andrew Carbungco
-                <p>Web Developer</p>
+        <main id="main">
+            <header id="welcome-section">
+                <h1 class="banner-content">Andrew Carbungco</h1>
+                <h2 class="banner-content">Creative Web Designer</h2>
                 <section id="social_icons">
                     <section id="social_tiles_list">
-                        <a href="https://www.instagram.com/drewlearnsabout/" target="_blank"><img id="instagram" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/002-instagram.png?raw=true" alt="Instagram logo"></a>
-                        <a href="https://github.com/drewlearnsabout" target="_blank"><img id="gitHub" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/005-cat.png?raw=true" alt="GitHub logo"></a>
-                        <a href="https://www.linkedin.com/in/andrew-carbungco-1357ab22" target="_blank"><img id="linkedIn" class="social_icon_size" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/004-linkedin.png?raw=true" alt="LinkedIn Logo"></a>
+                        <a href="https://www.instagram.com/drewlearnsabout/"><img class="social_icon_size" src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+                        <a href="https://www.linkedin.com/in/andrew-carbungco-1357ab22"><img class="social_icon_size" src="https://image.flaticon.com/icons/svg/174/174857.svg"></a>
+                        <a href="https://github.com/drewlearnsabout"><img class="social_icon_size" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
                     </section>
+                <section id="about_me">
+                    <p>Certified experience in responsive web design</p>
                 </section>
-            </h1>
-        </header>
-        <section>
-            <div id="myModal" class="modal">
-                <div class="modal-content"> 
-                    <div class="slideshowContainer">
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <div class="mySlides">
-                            <a href="https://codepen.io/drewlearnsabout/pen/mQvXQb"><img class="pictureSize" src="hairstylist.png"></a>
-                            <p class="text">Example Freelance Hairstylist Landing Page</p>
-                        </div>
-                        <div class="mySlides">
-                            <a href="https://codepen.io/drewlearnsabout/pen/GYEErE?editors=1100"><img class="pictureSize" src="Sourdough Bread Recipe page.png"></a>
-                            <p class="text">Example Recipe Page</p>
-                        </div>
-                        <div class="mySlides">
-                            <a href="https://codepen.io/drewlearnsabout/pen/NENErL"><img class="pictureSize" src="Voting page.png"></a>
-                            <p class="text">Example Informative Web Page</p>
-                        </div>
-                        <div class="mySlides">
-                            <a href="https://codepen.io/drewlearnsabout/pen/MqNKKB"><img class="pictureSize" src="D20 Dice page.png"></a>
-                            <p class="text">Example Product Landing Page</p>  
-                        </div>
-                        <div class="mySlides">
-                            <a href="https://www.aimhighimpact.org"><img class="pictureSize" src="Impact home page.png"></a>
-                            <p class="text">Web Design Project for Non-Profit</p>  
-                        </div>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
-                    <span class="close">&times;</span>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div id="myModal2" class="modal">
-                <div class="modal-content">
-                    <form id="contact_me" name="contact" method="post" netlify>    
-                        <p>Contact me</p>
-                        <input class="contact_me_class" id="name" type="text" placeholder="Name" required>
-                        <input class="contact_me_class" id="email" type="email" placeholder="Email" required>
-                        <input class="contact_me_class" id="addition" type="number" placeholder="What's 1 + 2?" required>
-                        <textarea class="contact_me_class" id="comments" placeholder="Add comments or inquiries" rows="2" cols="19"></textarea>
-                        <button class="contact_me_class" id="submit" type="submit">Submit</button> 
-                    </form>
-                    <span class="close">&times;</span>
-                </div>
-            </div>
-        </section>
+            </header>
+            
+            <section id="navbar">
+                <nav id="nav-move">
+                    <a class="nav_tiles" id="about_tile" href="#social_icons">About</a>
+                    <a class="nav_tiles" id="project_tile" href="#projects">Projects</a>
+                    <a class="nav_tiles" id="contact_tile" href="#contact">Contact</a>
+                </nav>
+                <nav id="nav-move2">
+                    <span><i id="fa-bars" class="fas fa-bars"></i></span>
+                    <nav id="show_tiles">
+                    <a class="nav_tiles" id="about_tile" href="#social_icons">About</a>
+                    <a class="nav_tiles" id="project_tile" href="#projects">Projects</a>
+                    <a class="nav_tiles" id="contact_tile" href="#contact">Contact</a>
+                    </nav>
+                </nav>
+            </section>
+            <section id="projects">
+                <p>Projects</p>
+                <section id="project-tile">
+                    <article>
+                        <a href="https://codepen.io/drewlearnsabout/pen/GYEErE"><img id="sourdough_bread" class="tiles" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Sourdough%20Bread%20Recipe%20page.png?raw=true"></a>
+                        <p class="project-title">Sourdough Bread recipe</p>
+                    </article>
+                    <article>
+                        <a href="https://codepen.io/drewlearnsabout/pen/MqNKKB"><img id="d20" class="tiles" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/D20%20Dice%20page.png?raw=true"></a>
+                        <p class="project-title">D20 dice product page</p>
+                    </article>
+                    <article>
+                        <a href="https://codepen.io/drewlearnsabout/pen/QVNVwd"><img id="survey" class="tiles" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Survey%20page.png?raw=true"></a>
+                        <p class="project-title">Feedback survey</p>
+                    </article>
+                    <article>    
+                        <a href="#"><img id="impact" class="tiles" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Impact%20home%20page.png?raw=true"></a>
+                        <p class="project-title">Non-profit Home page</p>
+                    </article>
+                    <article>
+                        <a href="#"><img id="ascend" class="tiles" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Ascend%20page.png?raw=true"></a>
+                        <p class="project-title">Curriculum home page</p>
+                    </article>
+                    <article>    
+                        <a href="https://codepen.io/drewlearnsabout/pen/NOgyXp"><img id="tribute_to_tyson" class="tiles" src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/tributepage2.png?raw=true"></a>
+                    <p class="project-title">Tribute page</p>
+                    </article>
+                    <article>
+                        <a href="https://codepen.io/drewlearnsabout/pen/zdxXrm?editors=1100"><img id="old_portfolio" class="tiles" src="https://andrewcarbungco.files.wordpress.com/2017/09/project-1.png?w=700&h="></a>
+                        <p class="project-title">Portfolio example page</p>
+                    </article>
+                </section>
+                <section id="portfolio">
+                    <a id="profile-link" href="https://github.com/drewlearnsabout" target="_blank"><h3>Full Portfolio</h3></a>
+                </section>
+            </section>
+            <article id="contact">
+                <section id="contact_section">
+                <form id="contact_me" name="contact" method="post" netlify>    
+                    <p>Contact me</p>
+                    <input class="contact_me_class" id="name" type="text" placeholder="Name" required>
+                    <input class="contact_me_class" id="email" type="email" placeholder="Email" required>
+                    <input class="contact_me_class" id="addition" type="number" placeholder="What's 1 + 2?" required>
+                    <textarea class="contact_me_class" id="comments" placeholder="Add comments or inquiries" rows="2" cols="19"></textarea>
+                    <button class="contact_me_class" id="submit" type="submit">Submit</button> 
+                </form>
+                </section>
+            </article>
+            <footer id="footer">
+                <p>Thank you for visiting my website!</p>
+            </footer>
+        </main>
     </body>
-    
-
-    <script>
-        //Variables for Portfolio Btn & Section
-        var modal = document.getElementById("myModal");
-        var portfolioBtn = document.getElementById("portfolioIcon");
-        var spanPortfolio = document.getElementsByClassName("close")[0];
-        //Variables for Contact Btn & Section
-        var modal2 = document.getElementById("myModal2");
-        var contactBtn = document.getElementById("contactIcon");
-        var spanContact = document.getElementsByClassName("close")[1];
-        
-        //JS for Portfolio
-        portfolioBtn.onclick = function() {
-            modal.style.display = "block";
-        }
-        spanPortfolio.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        //JS for Contact
-        contactBtn.onclick = function() {
-            modal2.style.display = "block";
-        }
-        spanContact.onclick = function() {
-            modal2.style.display = "none";
-        }
-
-        //JS for both Portfolio and Contact
-        window.onclick = function() {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-            if (event.target == modal2) {
-                modal2.style.display = "none";
-            }
-        }
-        
-        //For the next and prev buttons
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex-1].style.display = "block";
-        }
-
-    </script>
 </html>
