@@ -9,11 +9,33 @@ nav {
     background: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.4em;
     display: grid;
     grid-template-columns: 60% 30%;
     justify-items: center;
     opacity: 0.2;
+}
+
+.topIcons {
+    display: grid;
+    justify-self: center;
+}
+
+.navbarIcons .tooltip {
+    position: absolute;
+    visibility: hidden;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    margin-left: -0.7em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.navbarIcons:hover .tooltip {
+    visibility: visible;
+    animation-name: fade2;
+    animation-duration: 1s;
 }
 
 nav:hover {
@@ -104,7 +126,7 @@ h1 p {
 
 .pictureSize {
     height: auto;
-    width: 50em;
+    width: 45em;
     border-radius: 0.5em 0.5em 0 0;
 }
 
@@ -160,9 +182,20 @@ h1 p {
 
 }
 
+@media (max-width: 400px) {
+    .pictureSize {
+        height: auto;
+        width: 250px;
+    }
+}
+
 @media (max-width: 800px) {
     header {
-        margin: 2em 0 0 0;
+        margin: 12em 0 0 0;
+    }
+
+    h1 {
+        color: white;
     }
 
     .modal {
@@ -201,4 +234,14 @@ h1 p {
         left: 0;
         opacity: 1;
     }
+}
+
+@keyframes fade2 {
+    0% {
+
+        opacity: 0.2;
+    }
+    50% {
+
+        opacity: 1;
 }
