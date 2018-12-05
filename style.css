@@ -74,6 +74,19 @@ h1 {
     text-shadow: 1px 1px 8px #949393;
 }
 
+#mainTitle {
+    font-size: 0.9em;
+    animation-name: opacName;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+#secondTitle {
+    animation-name: opacName2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 h1 p {
     text-align: center;
     font-size: 0.5em;
@@ -179,13 +192,12 @@ h1 p {
 
 .contact_me_class {
     font-family: 'Open Sans Condensed', sans-serif;
-
 }
 
 @media (max-width: 400px) {
     .pictureSize {
         height: auto;
-        width: 250px;
+        width: 225px;
     }
 }
 
@@ -216,6 +228,13 @@ h1 p {
     }
 }
 
+@media (min-height: 720px) and (max-height: 1024px) {
+    header {
+        margin-top: 20em;
+    }
+
+}
+
 @keyframes resize {
     0% {
         transform: scale(1);
@@ -244,4 +263,25 @@ h1 p {
     50% {
 
         opacity: 1;
+}
+}
+
+@keyframes opacName {
+    0% {
+        opacity: 0.2;
+        font-size: 0.5em;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacName2 {
+    0% {
+        opacity: 0.1;
+
+    }
+    50% {
+        opacity: 1;
+    }
 }
