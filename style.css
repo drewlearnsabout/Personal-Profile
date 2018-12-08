@@ -15,7 +15,7 @@ nav {
     justify-items: center;
     opacity: 0.2;
     animation-name: opacName;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -80,13 +80,13 @@ h1 {
 #mainTitle {
     font-size: 0.9em;
     animation-name: opacName;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
 #secondTitle {
     animation-name: opacName2;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
