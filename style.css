@@ -14,6 +14,9 @@ nav {
     grid-template-columns: 60% 30%;
     justify-items: center;
     opacity: 0.2;
+    animation-name: opacName;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .topIcons {
@@ -77,13 +80,13 @@ h1 {
 #mainTitle {
     font-size: 0.9em;
     animation-name: opacName;
-    animation-duration: 0.8s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 #secondTitle {
     animation-name: opacName2;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -100,6 +103,9 @@ h1 p {
 #social_tiles_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    animation-name: opacName3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 .social_icon_size {
@@ -268,20 +274,38 @@ h1 p {
 
 @keyframes opacName {
     0% {
-        opacity: 0.2;
+        opacity: 0;
         font-size: 0.5em;
     }
     50% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
 
 @keyframes opacName2 {
     0% {
-        opacity: 0.1;
+        opacity: 0;
 
     }
-    50% {
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opacName3 {
+    0% {
+        opacity: 0;
+
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
