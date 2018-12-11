@@ -62,14 +62,14 @@
         <section>
             <div id="myModal2" class="modal">
                 <div class="modal-content">
-                    <form id="contact_me" name="contact" method="post" netlify>    
+                    <form id="contact_me" name="contact" method="post" data-netlify="true">    
                         <p>Contact me
                             <br >andrew.carbungco@gmail.com
                         </p>
-                        <input class="contact_me_class" id="name" type="text" placeholder="Name" required>
-                        <input class="contact_me_class" id="email" type="email" placeholder="Email" required>
-                        <input class="contact_me_class" id="addition" type="number" placeholder="What's 1 + 2?" required>
-                        <textarea class="contact_me_class" id="comments" placeholder="Add comments or inquiries" rows="2" cols="19"></textarea>
+                        <input class="contact_me_class" id="name" name="name" type="text" placeholder="Name" required>
+                        <input class="contact_me_class" id="email" name="email" type="email" placeholder="Email" required>
+                        <input class="contact_me_class" id="addition" name="equation" type="number" placeholder="What's 1 + 2?" required>
+                        <textarea class="contact_me_class" id="comments" name="comments" placeholder="Add comments or inquiries" rows="2" cols="19"></textarea>
                         <button class="contact_me_class" id="submit" type="submit">Submit</button> 
                     </form>
                     <span class="close">&times;</span>
