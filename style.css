@@ -50,7 +50,7 @@ nav a {
 }
 
 .topIcons {
-    background: rgb(255, 203, 61);
+    background: rgb(219, 214, 214);
     padding: 2px;
     border-radius: 4px;
     height: 2em;
@@ -58,6 +58,7 @@ nav a {
 }
 
 .topIcons:hover {
+    background: rgb(255, 203, 61);
     cursor: pointer;
     animation-name: resize;
     animation-duration: 1s;
