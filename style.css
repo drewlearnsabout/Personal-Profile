@@ -293,9 +293,11 @@ h1 p {
     }
     50% {
         opacity: 0;
+        transform: translate3d(0, -1em, 0);
     }
     100% {
         opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -315,12 +317,12 @@ h1 p {
     0% {
         opacity: 0;
     }
-    80% {
+    68% {
         opacity: 0;
         transform: translate3d(0, 0, 0);
     }
-    91% {
-        transform: scale(1.2) translate3d(0.1em, -0.3em, 0);
+    75% {
+        transform: scale(1.2) translate3d(0, -0.3em, 0);
     }
     100% {
         opacity: 1;
@@ -330,12 +332,12 @@ h1 p {
     0% {
         opacity: 0;
     }
-    82% {
+    70% {
         opacity: 0;
         transform: translate3d(0, 0, 0);
     }
-    93% {
-        transform: scale(1.2) translate3d(0.1em, -0.5em, 0);
+    78% {
+        transform: scale(1.2) translate3d(0, -0.5em, 0);
     }
     100% {
         opacity: 1;
@@ -345,11 +347,11 @@ h1 p {
     0% {
         opacity: 0;
     }
-    84% {
+    72% {
         opacity: 0;
         transform: translate3d(0, 0, 0);
     }
-    95% {
+    80% {
         transform: scale(1.2) translate3d(0.1em, -0.7em, 0);
     }
     100% {
