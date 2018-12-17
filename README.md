@@ -11,6 +11,6 @@
     CSS Animations</p>
   
   <p>Preview of site:<p>
-  <img src="#" alt="Picture of Andrew Carbungco's portfolio">
+  <img src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Portfolio%20snapshot.png?raw=true" alt="Picture of Andrew Carbungco's portfolio">
     
 </html>
