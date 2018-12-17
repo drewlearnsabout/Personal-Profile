@@ -11,6 +11,6 @@
     CSS Animations</p>
   
   <p>Preview of site:<p>
-  <a href="andrew-carbungco.netlify.com"><img src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Portfolio%20snapshot.png?raw=true" alt="Picture of Andrew Carbungco's portfolio"></a>
+  <a href="https://andrew-carbungco.netlify.com/"><img src="https://github.com/drewlearnsabout/Personal-Profile/blob/master/Portfolio%20snapshot.png?raw=true" alt="Picture of Andrew Carbungco's portfolio"></a>
     
 </html>
