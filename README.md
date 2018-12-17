@@ -1,7 +1,7 @@
 # Personal-Profile
 
 <html>
-  <p>Site link: <a href="andrew-carbungco.netlify.com">Andrew Carbungco</a></p>
+  <p>Site link: <a href="https://andrew-carbungco.netlify.com/">Andrew Carbungco</a></p>
   <p>Languages used:<br>
     HTML5<br >
     CSS3<br >
