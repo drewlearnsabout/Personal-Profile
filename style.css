@@ -61,7 +61,7 @@ nav a {
     background: rgb(255, 198, 42);
     cursor: pointer;
     animation-name: resize;
-    animation-duration: 1s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 
@@ -131,7 +131,7 @@ h1 p {
 
 .social_icon_size:hover {
     animation-name: resize;
-    animation-duration: 1s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
     background: rgb(250, 205, 3);
 }
