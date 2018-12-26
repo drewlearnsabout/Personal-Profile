@@ -167,6 +167,10 @@ h1 p {
     cursor: pointer;
     font-family: 'Quicksand', sans-serif;
     font-size: 3em; 
+    color: black;
+}
+
+.close:hover {
     color: rgb(255, 217, 0);
 }
 
