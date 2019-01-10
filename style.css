@@ -6,7 +6,7 @@ body {
 
 nav {
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     padding-top: 1em;
     padding-bottom: 0.4em;
@@ -17,6 +17,7 @@ nav {
     animation-name: opacName;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    transition-duration: 1s;
 }
 
 .topIcons {
@@ -29,7 +30,6 @@ nav {
     visibility: hidden;
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
-    background: rgba(0, 0, 0, 0.4);
     margin-left: -0.7em;
     padding: 0.5em;
     text-align: center;
@@ -43,6 +43,7 @@ nav {
 
 nav:hover {
     opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 nav a {
