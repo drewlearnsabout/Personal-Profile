@@ -51,9 +51,9 @@ nav a {
 }
 
 .topIcons {
-    background: rgb(205, 241, 241);
-    padding: 2px;
-    border-radius: 4px;
+    background: rgb(219, 214, 214);
+    padding: 0.4em;
+    border-radius: 2em;
     height: 2em;
     width: 2em;
 }
