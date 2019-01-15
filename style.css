@@ -23,6 +23,7 @@ nav {
 .topIcons {
     display: grid;
     justify-self: center;
+    margin-bottom: 0.5em;
 }
 
 .navbarIcons .tooltip {
@@ -30,7 +31,7 @@ nav {
     visibility: hidden;
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
-    margin-left: -0.7em;
+    margin-left: -0.45em;
     padding: 0.5em;
     text-align: center;
 }
